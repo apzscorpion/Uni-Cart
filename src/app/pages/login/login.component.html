@@ -1,0 +1,26 @@
+<div>
+  <form class="LoginForm">
+    <h2 class="Title">Welcome!</h2>
+    <!-- Username -->
+    <label class="LoginForm--Label" for="username"> Email or Phone *</label>
+    <input id="username" type="text" />
+
+    <!-- Password -->
+    <label class="LoginForm--Label" for="username"> Password *</label>
+    <div class="LoginForm__PasswordContainer">
+      <input
+        class="LoginForm--Password"
+        id="password"
+        :type="!hidePassword ? 'text' : 'password'"
+      />
+      <span class="LoginForm--eye-btn" (click)="togglePasswordVisibility()">
+        eye</span
+      >
+    </div>
+
+    <!-- forgot password -->
+    <a class="LoginForm--ForgotPassword" href="#">Forgot password?</a>
+
+    <input class="LoginForm--Submit" type="submit" value="Login" />
+  </form>
+</div>

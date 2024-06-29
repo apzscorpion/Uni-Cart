@@ -1,0 +1,81 @@
+// a {
+//   @include lato-regular;
+// }
+
+.password-container {
+  position: relative;
+}
+
+.password-input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px; /* space for the eye icon */
+  font-size: 16px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.LoginForm {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  margin: auto;
+
+  input {
+    padding: 12px 10px;
+    border-radius: 4px;
+    border: 1px solid #e3e9f1;
+    outline: none;
+    margin-bottom: 24px;
+  }
+
+  h2 {
+    font-family: "lato", sans-serif;
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+
+  &__PasswordContainer {
+    position: relative;
+  }
+
+  &--Label {
+    // @include lato-regular;
+    font-size: 14px;
+    color: #6d6d6d;
+    margin-bottom: 4px;
+  }
+
+  &--eye-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #b9b9b9;
+  }
+
+  &--ForgotPassword {
+    color: #007aff;
+    text-align: end;
+    margin-bottom: 30px;
+    margin-top: 4px;
+  }
+
+  &--Submit {
+    background-color: #007aff;
+    width: 48.6%;
+    color: white;
+  }
+
+  #password {
+    width: -webkit-fill-available;
+    margin: 0;
+  }
+}
